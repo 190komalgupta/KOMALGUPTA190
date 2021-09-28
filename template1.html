@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="resume.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+    .containerr {
+        background-color: lightblue;
+        width: 100vw;
+        height: 200vh;
+        display: flex;
+        padding-top: 10px;
+    }
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .template_box {
+        height: 200vh;
+        margin-left: 34px;
+        width: 70vw;
+        box-shadow: 1px 2px 12px 1px black;
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .left_side {
+        width: 40%;
+        height: 100%;
+        background-color: #003147;
+        text-align: center;
+    }
+
+    .right_side {
+        width: 70%;
+        background-color: white;
+        height: 187vh;
+    }
+
+    #image {
+        width: 164px;
+        margin-top: 26px;
+        border-radius: 50%;
+    }
+
+    #name {
+        font-size: 27px;
+        color: #fff;
+        letter-spacing: 1px;
+        line-height: 51px;
+        text-transform: capitalize;
+    }
+
+    #profession {
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        font-size: 15px;
+        color: #fff;
+    }
+
+    #line {
+        width: 80%;
+        background-color: rgba(128, 128, 128, 0.185);
+        margin-left: 29px;
+        margin-top: 18px;
+    }
+
+    #contact_info {
+        font-size: 18px;
+        margin-top: 52px;
+        color: white;
+        margin-left: -79px;
+        text-transform: uppercase;
+    }
+
+    span {
+        margin-left: 3px;
+    }
+
+    #span a {
+        margin-left: 8px;
+        text-decoration: none;
+        color: white;
+    }
+
+    i {
+        color: rgb(0, 162, 255);
+    }
+
+    .links {
+        text-align: left;
+        padding: 20px;
+    }
+
+    .info {
+        position: relative;
+        left: 0px;
+        padding: 6px;
+    }
+
+    #info_1 {
+        padding-left: 7px;
+    }
+
+    #educaion_heading {
+        color: white;
+        padding-top: 44px;
+        padding-left: 19px;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+    .Education {
+        text-align: left;
+        margin-top: -30px;
+    }
+
+    .first {
+        padding-top: 0;
+    }
+
+    #first_info {
+        padding-top: 21px;
+        padding-left: 18px;
+    }
+
+    #years {
+        color: rgb(0, 162, 255);
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 800;
+    }
+
+    #field {
+        padding-top: 5px;
+        color: #fff;
+        line-height: 21px;
+    }
+
+    #University {
+        color: gray;
+        padding-top: 6px;
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: 300;
+    }
+
+    .languages {
+        padding-top: 51px;
+        text-align: left;
+        padding-left: 15px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 17px;
+    }
+
+    #eng {
+        padding-top: 15px;
+        text-transform: capitalize;
+    }
+
+    #percentage {
+        width: 21vw;
+        height: 4px;
+        background-color: black;
+        margin-top: 11px;
+    }
+
+    .spann {
+        margin-left: 8px;
+    }
+
+    #per {
+        width: 19vw;
+        height: 4px;
+        background-color: rgb(0, 162, 255);
+    }
+
+    #per_f {
+        width: 14vw;
+        height: 4px;
+        background-color: rgb(0, 162, 255);
+    }
+
+    #per_h {
+        width: 20vw;
+        height: 4px;
+        background-color: rgb(0, 162, 255);
+    }
+
+    .right_side {
+        position: relative;
+        padding: 40px;
+    }
+
+    .about {
+        margin-bottom: 50px;
+    }
+
+    #profile {
+        color: #003147;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    p {
+        color: #333;
+        line-height: 19px;
+    }
+
+    .titile2 {
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 25px;
+        color: #003147;
+    }
+
+    .box {
+        display: flex;
+        /* justify-content: space-between; */
+        flex-direction: row;
+        margin: 20px auto;
+    }
+
+    .year_company {
+        min-width: 150px;
+    }
+
+    .year_company h5 {
+        color: black;
+        text-transform: uppercase;
+    }
+
+    .text h4 {
+        color: #2a7da2;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+
+    #skills {
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 25px;
+        color: #003147;
+    }
+
+    .skills {
+        padding-top: 5px;
+    }
+
+    .percentage {
+        width: 26vw;
+        height: 9px;
+        border-radius: 3px;
+        background-color: wheat;
+    }
+
+    .skill {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #cour {
+        color: black;
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .per {
+        background-color: #2a7da2;
+        height: 9px;
+        width: 25vw;
+        border-radius: 3px;
+    }
+
+    .perC {
+        height: 9px;
+        background-color: #2a7da2;
+        width: 21vw;
+    }
+
+    .perJ {
+        height: 9px;
+        background-color: #2a7da2;
+        width: 16vw;
+    }
+
+    .perD {
+        height: 9px;
+        background-color: #2a7da2;
+        width: 23vw;
+    }
+
+    .perP {
+        height: 9px;
+        background-color: #2a7da2;
+        width: 22vw;
+    }
+
+    .skill {
+        padding-top: 8px;
+    }
+
+    .interest_div {
+        padding-top: 67px;
+    }
+
+    #interest {
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 25px;
+        color: #003147;
+    }
+
+    .main_div {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: -22px;
+    }
+
+    .inter h5 {
+        color: black;
+        text-transform: uppercase;
+    }
+
+    .inter {
+        margin-right: 34px;
+    }
+
+    .btns {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 87px;
+    }
+
+    .btn {
+        padding: 6px 14px;
+        font-size: 18px;
+        border-radius: 23px;
+        border: black solid 1px;
+        background: #003147;
+        color: white;
+        letter-spacing: 2px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    .btn2 {
+        padding: 8px 16px;
+        font-size: 18px;
+        border-radius: 23px;
+        border: wheat solid 1px;
+        background: black;
+        color: white;
+        letter-spacing: 2px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="template_box">
+            <div class="left_side">
+                <img src="photo.jpg" alt="" id="image">
+                <h2 id="name">Ayush Gupta</h2>
+                <h3 id="profession">Web Developer</h3>
+                <hr id="line">
+                <h3 id="contact_info">Contact <span>Information</span> </h3>
+                <div class="links">
+                    <div class="info" id="info_1">
+                        <i class="fas fa-phone-square-alt"></i><span id="span"><a href="#"> +8651230754</a></span>
+                    </div>
+                    <div class="info">
+                        <i class="fas fa-envelope"></i> <span id="span"><a href="#">ayushGupta@gmail.com</a></span>
+                    </div>
+                    <div class="info">
+                        <i class="fas fa-globe-asia"></i> <span id="span"><a href="#">www.resume.com</a></span>
+                    </div>
+                    <div class="info">
+                        <i class="fab fa-linkedin"></i> <span id="span"><a href="#">www.Linkden.com/ayush</a></span>
+                    </div>
+                    <div class="info">
+                        <i class="fas fa-map-marker-alt"></i> <span id="span"><a
+                                href="#">Jamshepur,Jharkhand,India</a></span>
+                    </div>
+
+                </div>
+                <div class="Education">
+                    <h3 id="educaion_heading">Education</h3>
+                    <div id="first_info" class="first">
+                        <h4 id="years">2010 - 2013</h4>
+                        <h4 id="field">Master Degree In Computer <br> Science</h4>
+                        <h3 id="University">University Name</h3>
+                    </div>
+                    <div id="first_info">
+                        <h4 id="years">2007 - 2010</h4>
+                        <h4 id="field">Bachelor Degree In Computer <br> Science</h4>
+                        <h3 id="University">University Name</h3>
+                    </div>
+                    <div id="first_info">
+                        <h4 id="years">1998 - 2007</h4>
+                        <h4 id="field">Matriculation</h4>
+                        <h3 id="University">University Name</h3>
+                    </div>
+                </div>
+                <div class="languages">
+                    <h3 id="lang">Languages</h3>
+                    <div class="first_lang ">
+                        <h4 id="eng">English</h4>
+                        <div id="percentage">
+                            <div id="per"></div>
+                        </div>
+                    </div>
+                    <div class="first_lang ">
+                        <h4 id="eng">French</h4>
+                        <div id="percentage">
+                            <div id="per_f"></div>
+                        </div>
+                    </div>
+                    <div class="first_lang ">
+                        <h4 id="eng">Hindi</h4>
+                        <div id="percentage">
+                            <div id="per_h"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right_side">
+                <div class="about">
+                    <h2 id="profile">Profile</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quam quasi molestiae eligendi
+                        dolorem laborum accusantium expedita laudantium Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Fugit soluta atque ex.quibusdam quidem?<br><br>Lorem ipsum dolor, sit amet
+                        consectetur adipisicing elit. Officia dolorum amet rem ullam eum. Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Facilis, labore? Libero obcaecati sunt aperiam dignissimos
+                        recusandae. Distinctio, pariatur.</p>
+                </div>
+                <div class="about">
+                    <h2 class="titile2">Experince</h2>
+                    <div class="box">
+                        <div class="year_company">
+                            <h5>2019 - Present</h5>
+                            <h5>Company Name</h5>
+                        </div>
+                        <div class="text">
+                            <h4>Seneior UI Designer</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolorum ullam ea
+                                temporibus excepturi, incidunt maiores.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="year_company">
+                            <h5>2014 - 2016</h5>
+                            <h5>Company Name</h5>
+                        </div>
+                        <div class="text">
+                            <h4>Seneior UI Designer</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolorum ullam ea
+                                temporibus excepturi, incidunt maiores.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="year_company">
+                            <h5>2016 - 2019</h5>
+                            <h5>Company Name</h5>
+                        </div>
+                        <div class="text">
+                            <h4>Seneior UI Designer</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolorum ullam ea
+                                temporibus excepturi, incidunt maiores.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h2 id="skills">Professional skills</h2>
+                    <div class="skill">
+                        <h5 id="cour">Html</h5>
+                        <div class="percentage">
+                            <div class="per"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h5 id="cour">CSS</h5>
+                        <div class="percentage">
+                            <div class="perC"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h5 id="cour">Java Script</h5>
+                        <div class="percentage">
+                            <div class="perJ"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h5 id="cour">Python</h5>
+                        <div class="percentage">
+                            <div class="perP"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h5 id="cour">Djnago</h5>
+                        <div class="percentage">
+                            <div class="perD"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="interest_div">
+                    <h2 id="interest">Interst</h2>
+                    <div class="main_div">
+                        <div class="inter">
+                            <i class="fas fa-gamepad"></i><span class="spann">Gaming</span>
+                        </div>
+                        <div class="inter">
+                            <i class="fas fa-microphone-alt"></i><span class="spann">Singing</span>
+                        </div>
+                        <div class="inter">
+                            <i class="fas fa-utensils"></i><span class="spann">Coking</span>
+                        </div>
+                        <div class="inter">
+                            <i class="fas fa-book-open"></i><span class="spann">Reading</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="btns">
+                    <button class="btn2">Hire Me</button>
+                    <button class="btn">Download <i class="fas fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="logic.js"></script>
+</body>
+
+</html>
