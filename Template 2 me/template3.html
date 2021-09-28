@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap");
+
+        .container {
+            width: 98vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Sora", sans-serif;
+        }
+
+        .content {
+            width: 92vw;
+            height: 88vh;
+            background-color: gray;
+            display: flex;
+        }
+
+        .left_side {
+            width: 6%;
+            height: 100%;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .right_side {
+            background-color: black;
+            width: 64%;
+            height: 100%;
+        }
+
+        .img_container {
+            width: 30%;
+            background-color: black;
+            height: 100%;
+            border-radius: 5px;
+        }
+
+        .icon {
+            font-size: 33px;
+            padding-top: 8px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            background: rgb(5, 228, 105);
+            height: 8%;
+        }
+
+        .img_container {
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+            height: 106%;
+            position: relative;
+            top: -3%;
+        }
+
+        .icons_list {
+            margin-top: 4px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 46px;
+        }
+
+        .icons {
+            margin-top: 22px;
+            font-size: 27px;
+        }
+
+        .down {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 12px;
+            color: rgb(5, 228, 105);
+        }
+
+        #img {
+            width: 100%;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .layer {
+            position: relative;
+            top: -104px;
+            text-align: center;
+        }
+
+        #name {
+            font-size: 20px;
+            line-height: 10px;
+        }
+
+        .Right_side_content {
+            padding: 35px 17px;
+        }
+
+        #About {
+            font-size: 30px;
+            color: white;
+            padding-bottom: 12px;
+        }
+
+        .first_icon {
+            color: rgb(5, 228, 105);
+        }
+
+        #age {
+            color: rgb(5, 228, 105);
+            padding-bottom: 20px;
+        }
+
+        #para {
+            color: white;
+            line-height: 22px;
+        }
+
+        .hr_main {
+            width: 97%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hr {
+            width: 97%;
+            background-color: gray;
+            height: 2px;
+        }
+
+        #main_heading {
+            color: white;
+            font-size: 20px;
+        }
+
+        .display {
+            padding: 1px 14px;
+        }
+
+        .display1 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .right-side1 {
+            padding-top: 34px;
+        }
+
+        #para {
+            font-size: 14px;
+            color: gray;
+        }
+
+        .iconn {
+            padding-bottom: 10px;
+            color: rgb(5, 228, 105);
+        }
+
+        .dev {
+            padding-bottom: 5px;
+            color: white;
+        }
+
+        i {
+            color: white;
+        }
+
+        #name {
+            color: white;
+            font-size: 29px;
+            padding-bottom: 16px;
+            padding-top: 8px;
+        }
+
+        #profession {
+            color: rgb(5, 228, 105);
+            padding-bottom: 13px;
+        }
+
+        .icoon {
+            padding-left: 15px;
+        }
+
+        .iccon {
+            padding-right: 3px;
+        }
+
+        .btns {
+            padding-top: 4px;
+            padding-top: 38px;
+            padding-left: 26px;
+            display: flex;
+            width: 20vw;
+            justify-content: space-around;
+        }
+
+        .btn {
+            width: 100px;
+            padding: 5px;
+            border: none;
+            border-radius: 4px;
+            font-size: 15px;
+            font-weight: 300;
+        }
+
+
+        #Download {
+            background-color: rgb(5, 228, 105);
+            color: black;
+        }
+
+        .container {
+            background-color: gray;
+        }
+
+        .content {
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">+
+            <div class="left_side">
+                <i class="fas fa-hamburger icon"></i>
+                <div class="icons_list">
+                    <i class="fas fa-user-circle icons first_icon"></i>
+                    <i class="fas fa-phone-square-alt icons"></i>
+                    <i class="fas fa-university icons"></i>
+                    <i class="fab fa-r-project icons"></i>
+                </div>
+                <i class="fas fa-file-download down"></i>
+            </div>
+            <div class="img_container">
+                <img id="img" src="banner.jpg" alt="">
+                <div class="layer">
+                    <h3 id="name">Ayush Gupta</h3>
+                    <h5 id="profession">Graphic Designerr</h5>
+                    <div class="iccon">
+                        <i class="fab fa-facebook-square icoon"></i>
+                        <i class="fab fa-facebook-messenger icoon"></i>
+                        <i class="fab fa-linkedin-in icoon"></i>
+                        <i class="fab fa-instagram icoon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="right_side">
+                <div class="Right_side_content">
+                    <h1 id="About">About Me</h1>
+                    <h4 id="age">28 Years / Lvive / Freelance</h4>
+                    <h5 id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit illo ea sed assumenda
+                        repudiandae quae nesciunt, harum fugiat debitis, aliquam facere minus! Suscipit soluta
+                        voluptates nisi ipsam ducimus Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel
+                        nesciunt quae, aliquid repellat quas. dolorem, neque aliquid, temporibus accusantium numquam ad?
+                    </h5>
+                </div>
+                <div class="hr_main">
+                    <div class="hr"></div>
+                </div>
+
+                <div class="Right_side_content_down">\
+                    <div class="display">
+                        <h1 id="main_heading">My Services</h1>
+                        <div class="display1">
+                            <div class="right-side1">
+                                <i class="fas fa-desktop iconn"></i>
+                                <h4 class="dev">Devlopment</h4>
+                                <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate magni
+                                    tempora,
+                                    expedita beatae impedit animi suscipit?</p>
+                            </div>
+                            <div class="right-side1">
+                                <i class="fas fa-server iconn"></i>
+                                <h4 class="dev">Data Base</h4>
+                                <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate magni
+                                    tempora,
+                                    expedita beatae impedit animi suscipit?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btns">
+                    <button id="Edit" class="btn">Edit</button>
+                    <button id="Download" class="btn">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

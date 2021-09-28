@@ -1,0 +1,223 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Carattere&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+
+        * {
+            margin: 0px;
+            font-family: 'Source Sans Pro', sans-serif;
+            padding: 0px;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            background: maroon;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left_side {
+            padding-top: 72px;
+        }
+
+        .mainbox {
+            width: 89vw;
+            height: 88vh;
+            background-color: rgba(13, 228, 192, 0.863);
+            border-radius: 4px;
+            box-shadow: 3px 3px 17px 7px black;
+            border: white solid 9px;
+            padding: 8px;
+        }
+
+        #logo {
+            font-family: "Carattere", cursive;
+            font-size: 36px;
+            color: white;
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+
+        .ul {
+            display: flex;
+            align-items: center;
+            padding-top: 20px;
+            padding-left: 68px;
+        }
+
+        #ul2 {
+            display: flex;
+            align-items: center;
+            width: 44vw;
+            justify-content: space-between;
+            padding-top: 21px;
+            padding-right: 49px;
+        }
+
+        #ul2 li {
+            list-style: none;
+            padding-left: 23px;
+            border-radius: 19px;
+            padding: 3px 16px;
+            letter-spacing: 1px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            font-weight: 800;
+        }
+
+        .a {
+            text-decoration: none;
+            color: white;
+            letter-spacing: 2px;
+            transition: 0.5s;
+        }
+
+        #ul2 li:hover a {
+            color: black;
+        }
+
+        .home {
+            text-decoration: none;
+            color: maroon;
+            transition: 0.5s;
+        }
+
+    
+
+        #icon {
+            content: "\f1d8";
+            font-size: 39px;
+            padding-right: 18px;
+            padding-bottom: 11px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .content {
+            height: calc(82vh - 70px);
+            display: flex;
+            padding-top: 57px;
+        }
+
+        #pro {
+            font-size: 20px;
+            letter-spacing: 1px;
+            font-weight: 200;
+        }
+
+        #greet {
+            color: white;
+            font-size: 52px;
+            letter-spacing: 1px;
+            line-height: 53px;
+        }
+
+        .left_side {
+            padding-left: 54px;
+        }
+
+        #name {
+            color: rgb(240, 12, 50);
+            font-size: 40px;
+            letter-spacing: 2px;
+            font-weight: 800;
+            text-shadow: 3px 3px 20px #ff99cc,
+                -2px 1px 30px #ff99cc;
+        }
+
+        #para {
+            padding-top: 43px;
+            color: wheat;
+            letter-spacing: 1px;
+            font-size: 15px;
+        }
+
+        button {
+            padding: 5px 15px;
+            border-radius: 26px;
+            border: none;
+            width: 10vw;
+            font-size: 18px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        .btns {
+            margin-top: 65px;
+            width: 27vw;
+            display: flex;
+            justify-content: space-around;
+            margin-left: -22px;
+        }
+
+        .img {
+            width: 31vw;
+            border-radius: 50%;
+        }
+
+        .right_side {
+            margin-left: 233px;
+        }
+
+        #hire_me {
+            background-color: rgb(243, 13, 52);
+            color: white;
+            letter-spacing: 1px;
+            font-size: 20px;
+        }
+
+        #download {
+            display: flex;
+            align-items: center;
+        }
+
+        #i {
+            padding-left: 4px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="mainbox">
+            <nav class="navbar">
+                <ul class="ul">
+                    <i class="fas fa-paper-plane" id="icon"></i>
+                    <h1 id="logo">Online Resources</h1>
+                </ul>
+                <ul id="ul2">
+                    <li id="li"><a href="#" class="home">Home</a></li>
+                    <li><a href="template1.html" class="a">Template 1</a></li>
+                    <li><a href="template3.html" class="a">Template 2</a></li>
+                    <li><a href="#" class="a">Videos</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <div class="left_side">
+                    <h3 id="pro">Hi You are in the Online</h3>
+                    <h1 id="greet"> Resources Resume</h1>
+                    <h1 id="name"> Buliding Website </h1>
+                    <h5 id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Voluptates vero ab
+                        aperiam nobis quo laborum!</h5>
+
+                </div>
+                <div class="right_side">
+                    <img src="photo.jpg" class="img" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
